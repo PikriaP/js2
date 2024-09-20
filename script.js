@@ -30,27 +30,44 @@ console.log(increased);
 
 // 5
 
-const user = 'admin';           
-const passCode = 12345;         
+// const user = 'admin';           
+// const passCode = 12345;         
 
-// Prompt the user to enter the username and password
-const promptUser = prompt('Please enter your username'); 
-const promptCode = Number(prompt('Please enter your password')); 
+// // Prompt the user to enter the username and password
+// const promptUser = prompt('Please enter your username'); 
+// const promptCode = Number(prompt('Please enter your password')); 
 
-// Check if both the username and password match
-if (promptUser === user && promptCode === passCode) {
-    console.log('Login successful. Welcome!');
-} 
-// Check if both username and password are incorrect
-else if (promptUser !== user && promptCode !== passCode) {
-    console.log('Login failed. Please try again.');
+// // Check if both the username and password match
+// if (promptUser === user && promptCode === passCode) {
+//     console.log('Login successful. Welcome!');
+// } 
+// // Check if both username and password are incorrect
+// else if (promptUser !== user && promptCode !== passCode) {
+//     console.log('Login failed. Please try again.');
+// }
+// // Check if only the username is incorrect
+// else if (promptUser !== user) {
+//     console.log('Incorrect username');
+// } 
+// // Check if only the password is incorrect
+// else if (promptCode !== passCode) {
+//     console.log('Incorrect password');
+// }
+
+// 6
+const question1 = prompt("What's your favorite fruit? (apple, banana, orange)");
+const favFruit = question1;
+if (favFruit.includes('apple')){
+    console.log('Apples are great for a quick snack!');
+    
+}else if(favFruit.includes('orange')) {
+    console.log('Oranges are a great source of vitamin C!');
+    
+}else if(favFruit.includes('banana')) {
+    console.log('Bananas are full of potassium!');
+    
+}else {
+    console.log("That's an interesting choice! I don't know much about that fruit.");
 }
-// Check if only the username is incorrect
-else if (promptUser !== user) {
-    console.log('Incorrect username');
-} 
-// Check if only the password is incorrect
-else if (promptCode !== passCode) {
-    console.log('Incorrect password');
-}
+
 
